@@ -1,17 +1,20 @@
-CREATE TABLE departments (
-  id INT NOT NULL PRIMARY KEY,
-  department_name VARCHAR(30) NOT NULL
-);
-CREATE TABLE role (
-    id INT PRIMARY KEY,
-	title VARCHAR(30) NOT NULL, 
-    salary INT NOT NULL
-   	department_ID INT NOT NULL,
-);
-CREATE TABLE employees (
-	id INT NOT NULL PRIMARY KEY, 
-    first_name VARCHAR(35) NOT NULL,
-    last_name VARCHAR(40) NOT NULL,
-    role_id INT NOT NULL,
-    manager_id INT NOT NULL
-);
+USE employees_db;
+
+INSERT INTO department(name)
+VALUES ("Manufacturing"),
+("Human Resources"),
+("Customer Service");
+
+
+INSERT INTO role(title, salary, department_id)
+VALUES ("Welder", 32000, 1),
+    ("Labor", 20000, 2);
+
+
+INSERT INTO employee(first_name, last_name, role_id, manager_id)
+VALUES ("Matthew", "Todor", 2, 1);
+
+
+
+
+

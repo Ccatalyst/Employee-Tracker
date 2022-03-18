@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Ccatalyst/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/Ccatalyst/Employee-Tracker#readme"
+  "homepage": "https://github.com/Ccatalyst/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.1",
+    "mysql2": "^2.3.3"
+  }
 }
